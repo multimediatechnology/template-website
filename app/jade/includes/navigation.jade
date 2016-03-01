@@ -1,0 +1,32 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container
+    .navbar-header.page-scroll
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.page-scroll(href='#page-top')
+        img(
+          src='/images/logos/barcamp_header.png',
+          srcset='/images/logos/barcamp_header@2x.png 2x',
+          alt='Barcamp Salzburg – The next web',
+          width='200',
+          height='50'
+        )
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        block navlinks
+          li.hidden
+            a(href='#page-top')
+          li
+            a.page-scroll(href='#about') Barcamp
+          li
+            a.page-scroll(href='#tickets') Tickets
+          li
+            a.page-scroll(href='#speakers') Talks
+          li
+            a.page-scroll(href='#sponsors') Sponsors
+          li
+            a.page-scroll(href='#coc') Verhaltensregeln
