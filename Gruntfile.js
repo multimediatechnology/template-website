@@ -1,3 +1,5 @@
+const serveStatic = require('serve-static')
+
 module.exports = function(grunt) {
   'use strict'
 
@@ -8,8 +10,8 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt)
 
   var config = {
-    app: __dirname + './app',
-    dist: __dirname + './dist'
+    app: './app',
+    dist: './dist'
   }
 
   grunt.initConfig({
@@ -53,7 +55,7 @@ module.exports = function(grunt) {
 
     connect: {
       options: {
-        port: 9000,
+        port: 8123,
         open: true,
         livereload: 35729,
         hostname: '0.0.0.0'
@@ -62,9 +64,9 @@ module.exports = function(grunt) {
         options: {
           middleware: function(connect) {
             return [
-              connect.static('.tmp'),
-              connect().use('/bower_components', connect.static('./bower_components')),
-              connect.static(config.app)
+              connect().use('/bower_components', serveStatic('./bower_components')),
+              connect().use(serveStatic('.tmp')),
+              connect().use(serveStatic(config.app))
             ]
           }
         }
