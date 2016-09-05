@@ -20,10 +20,6 @@ $(function() {
   var $studyInfo = $('.study-info')
   var selectedId
 
-  if (!selectedId) {
-    $studyInfo.show()
-  }
-
   $study.on('change', function() {
     $('.study').addClass('hide')
     selectedId = $study.val()
@@ -35,6 +31,14 @@ $(function() {
     var $selectedStudy = $('#' + selectedId)
     $selectedStudy.removeClass('hide')
   })
+
+  selectedId = $study.val() || undefined
+  if (selectedId) {
+    $studyInfo.addClass('hide')
+    $study.trigger('change')
+  } else {
+    $studyInfo.addClass('hide')
+  }
 })
 
 // Highlight the top nav as scrolling occurs

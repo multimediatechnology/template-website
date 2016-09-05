@@ -6,16 +6,16 @@ section.bg-light-gray#courses
         h3.section-subheading.text-muted Informatik Student*innen der Universität Salzburg und der Fachhochschule Salzburg können folgende Kurse besuchen:
     .row
       .col-lg-4.col-lg-offset-4.text-center
-        p Bitte wähle dein aktuelles Studium aus
+        p Bitte wähle dein Studium aus
         select.form-control#study
-          option(disabled, selected) -
-          option(value="ba-computerwissenschaften") Bachelor Computerwissenschaften
-          option(value="ba-its") Bachelor ITS
-          option(value="ba-mmt") Bachelor MMT
-          option(disabled) -
-          option(value="ma-computerwissenschaften") Master Computerwissenschaften
-          option(value="ma-its") Master ITS
-          option(value="ma-mmt") Master MMT
+          optgroup
+            option(value="ba-computerwissenschaften", selected) Bachelor Computerwissenschaften
+            option(value="ba-its") Bachelor ITS
+            option(value="ba-mmt") Bachelor MMT
+          optgroup
+            option(value="ma-computerwissenschaften") Master Computerwissenschaften
+            option(value="ma-its") Master ITS
+            option(value="ma-mmt") Master MMT
         hr
     .row.study-info
       .col-lg-8.col-lg-offset-2.text-center
