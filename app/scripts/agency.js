@@ -15,6 +15,26 @@ $(function() {
     history.pushState({}, '', href)
     event.preventDefault()
   })
+
+  var $study = $('#study')
+  var $studyInfo = $('.study-info')
+  var selectedId
+
+  if (!selectedId) {
+    $studyInfo.show()
+  }
+
+  $study.on('change', function() {
+    $('.study').addClass('hide')
+    selectedId = $study.val()
+    if (selectedId) {
+      $studyInfo.addClass('hide')
+    } else {
+      $studyInfo.removeClass('hide')
+    }
+    var $selectedStudy = $('#' + selectedId)
+    $selectedStudy.removeClass('hide')
+  })
 })
 
 // Highlight the top nav as scrolling occurs

@@ -5,488 +5,495 @@ section.bg-light-gray#courses
         h2.section-heading Kurse
         h3.section-subheading.text-muted Informatik Student*innen der Universität Salzburg und der Fachhochschule Salzburg können folgende Kurse besuchen:
     .row
+      .col-lg-4.col-lg-offset-4.text-center
+        p Bitte wähle dein aktuelles Studium aus
+        select.form-control#study
+          option(disabled, selected) -
+          option(value="ba-computerwissenschaften") Bachelor Computerwissenschaften
+          option(value="ba-its") Bachelor ITS
+          option(value="ba-mmt") Bachelor MMT
+          option(disabled) -
+          option(value="ma-computerwissenschaften") Master Computerwissenschaften
+          option(value="ma-its") Master ITS
+          option(value="ma-mmt") Master MMT
+        hr
+    .row.study-info
       .col-lg-8.col-lg-offset-2.text-center
-        h4.section-subheading.text-muted Angebot für Student*innen der Universität Salzburg
+        p.text-muted Du hast noch keine Auswahl getroffen
+    .row.study.hide#ba-computerwissenschaften
+      .col-lg-8.col-lg-offset-2.text-center
+        h4.section-subheading.text-muted Angebot für Bachelor Student*innen der Universität Salzburg
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong Informatik-Bachelor
-          td: strong ITS: Web-Technologien
-          td.text-center WS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Netzwerkorientierte Softwareentwicklung
-          td.text-center WS
-          td.text-center 3
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Netzwerkmanagement
-          td.text-center WS
-          td.text-center 6
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Mobile Netze & Security
-          td.text-center WS
-          td.text-center 6
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Microcontroller
-          td.text-center WS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td(colspan=5) &nbsp;
-        tr
-          td
-          td: strong MMT: Web Programmierung 1 + 2
-          td.text-center WS/SS
-          td.text-center 7,5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Backend Development 1
-          td.text-center WS
-          td.text-center 2,5
-          td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
-        tr
-          td
-          td: strong MMT: Content Management Systems
-          td.text-center WS
-          td.text-center 2,5
-          td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
-        tr
-          td
-          td: strong MMT: Frontend Development 1
-          td.text-center WS
-          td.text-center 3
-          td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
-        tr
-          td
-          td: strong MMT: Frontend Development 2
-          td.text-center SS
-          td.text-center 2
-          td.text-muted Frontend Development 1
-        tr
-          td
-          td: strong MMT: Web Operations
-          td.text-center SS
-          td.text-center 2,5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Vertiefung Computergrafik
-          td.text-center SS
-          td.text-center 2,5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Game Development 1
-          td.text-center SS
-          td.text-center 2,5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Game Development 2
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Game Development 1
-        tr
-          td
-          td: strong MMT: Mixed Reality 1
-          td.text-center SS
-          td.text-center 2,5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Mixed Reality 2
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Mixed Reality 1
-        tr
-          td
-          td: strong MMT: Game Production Environments
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Game Development 1
-        tr
-          td
-          td: strong MMT: Mobile Applications 1
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Einführung Programmierung
-        tr
-          td
-          td: strong MMT: Mobile Applications 2
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Mobile Applications 1
-        tr
-          td
-          td: strong MMT: Interactive Prototyping & Physical Computing 1
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Einführung Programmierung
-        tr
-          td
-          td: strong MMT: Interactive Prototyping & Physical Computing 2
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Interactive Prototyping & Physical Computing 1
-    .row
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+              th.col-xs-2 Voraussetzungen
+          tbody
+            tr
+              td: strong Informatik-Bachelor
+              td: strong ITS: Web-Technologien
+              td.text-center WS
+              td.text-center 4
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Netzwerkorientierte Softwareentwicklung
+              td.text-center WS
+              td.text-center 3
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Netzwerkmanagement
+              td.text-center WS
+              td.text-center 6
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Mobile Netze & Security
+              td.text-center WS
+              td.text-center 6
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Microcontroller
+              td.text-center WS
+              td.text-center 4
+              td &nbsp;
+            tr
+              td(colspan=5) &nbsp;
+            tr
+              td
+              td: strong MMT: Web Programmierung 1 + 2
+              td.text-center WS/SS
+              td.text-center 7,5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Backend Development 1
+              td.text-center WS
+              td.text-center 2,5
+              td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
+            tr
+              td
+              td: strong MMT: Content Management Systems
+              td.text-center WS
+              td.text-center 2,5
+              td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
+            tr
+              td
+              td: strong MMT: Frontend Development 1
+              td.text-center WS
+              td.text-center 3
+              td.text-muted Vorkenntnisse HTML, CSS, PHP und Javascript
+            tr
+              td
+              td: strong MMT: Frontend Development 2
+              td.text-center SS
+              td.text-center 2
+              td.text-muted Frontend Development 1
+            tr
+              td
+              td: strong MMT: Web Operations
+              td.text-center SS
+              td.text-center 2,5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Vertiefung Computergrafik
+              td.text-center SS
+              td.text-center 2,5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Game Development 1
+              td.text-center SS
+              td.text-center 2,5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Game Development 2
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Game Development 1
+            tr
+              td
+              td: strong MMT: Mixed Reality 1
+              td.text-center SS
+              td.text-center 2,5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Mixed Reality 2
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Mixed Reality 1
+            tr
+              td
+              td: strong MMT: Game Production Environments
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Game Development 1
+            tr
+              td
+              td: strong MMT: Mobile Applications 1
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Einführung Programmierung
+            tr
+              td
+              td: strong MMT: Mobile Applications 2
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Mobile Applications 1
+            tr
+              td
+              td: strong MMT: Interactive Prototyping & Physical Computing 1
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Einführung Programmierung
+            tr
+              td
+              td: strong MMT: Interactive Prototyping & Physical Computing 2
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Interactive Prototyping & Physical Computing 1
+    .row.study.hide#ba-its
       .col-lg-8.col-lg-offset-2.text-center
         h4.section-subheading.text-muted Angebot für Student*innen des Studiengangs ITS-Bachelor
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong ITS-Bachelor
-          td: strong INF: GL Compilersysteme
-          td.text-center SS
-          td.text-center 5
-          td.text-muted statt DB-LB und Netzwerkorient. SW- Entw. (ITS 4.Sem)
-        tr
-          td
-          td: strong INF: Formale Sprachen und Komplexitätstheorie
-          td.text-center WS
-          td.text-center 4
-          td.text-muted statt UI-Technolog. (ITS 5.Sem) bei ITS 5 ECTS (1 ECTS müsste noch zus. gemacht werden)
-        tr
-          td
-          td: strong INF: Grundlagen Betriebssysteme
-          td.text-center WS
-          td.text-center 2
-          td.text-muted Statt Betriebssysteme (ITS 2. Sem, 2 ECTS)
-        tr
-          td
-          td: strong INF: Nichtprozedurale Programmierung
-          td.text-center SS
-          td.text-center 4
-          td.text-muted Uni: 2 ECTS VO + 2 ECTS PS; FH: 3 ECTS ILV „Netzwerkorientierte Softwareentwicklung“
-        tr
-          td
-          td: strong INF: Computational Geometry (Algorithmische Geometrie)
-          td.text-center WS
-          td.text-center 5
-          td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
-        tr
-          td(colspan=5) &nbsp;
-        tr
-          td
-          td: strong INF: Nicht-Standard Datenbank Systeme
-          td.text-center SS
-          td.text-center 5
-          td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
-        tr
-          td
-          td: strong INF: Introduction to Concurrency Theory and Practice
-          td.text-center SS
-          td.text-center 5
-          td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
-    .row
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+              th.col-xs-2 Anrechnung für
+          tbody
+            tr
+              td: strong ITS-Bachelor
+              td: strong INF: GL Compilersysteme
+              td.text-center SS
+              td.text-center 5
+              td.text-muted statt DB-LB und Netzwerkorient. SW- Entw. (ITS 4.Sem)
+            tr
+              td
+              td: strong INF: Formale Sprachen und Komplexitätstheorie
+              td.text-center WS
+              td.text-center 4
+              td.text-muted statt UI-Technolog. (ITS 5.Sem) bei ITS 5 ECTS (1 ECTS müsste noch zus. gemacht werden)
+            tr
+              td
+              td: strong INF: Grundlagen Betriebssysteme
+              td.text-center WS
+              td.text-center 2
+              td.text-muted Statt Betriebssysteme (ITS 2. Sem, 2 ECTS)
+            tr
+              td
+              td: strong INF: Nichtprozedurale Programmierung
+              td.text-center SS
+              td.text-center 4
+              td.text-muted Uni: 2 ECTS VO + 2 ECTS PS; FH: 3 ECTS ILV „Netzwerkorientierte Softwareentwicklung“
+            tr
+              td
+              td: strong INF: Computational Geometry (Algorithmische Geometrie)
+              td.text-center WS
+              td.text-center 5
+              td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
+            tr
+              td(colspan=5) &nbsp;
+            tr
+              td
+              td: strong INF: Nicht-Standard Datenbank Systeme
+              td.text-center SS
+              td.text-center 5
+              td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
+            tr
+              td
+              td: strong INF: Introduction to Concurrency Theory and Practice
+              td.text-center SS
+              td.text-center 5
+              td.text-muted Statt UI-Technolog. (ITS 5./6. Sem, 5 ECTS) bzw. Software- Design (ITS 5. Sem, 5 ECTS)
+    .row.study.hide#ba-mmt
       .col-lg-8.col-lg-offset-2.text-center
         h4.section-subheading.text-muted Angebot für Student*innen des Studiengangs MMT-Bachelor
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong MMT-Bachelor
-          td: strong INF: Einführung Simulation
-          td.text-center SS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Tuning von Datenbanksystemen
-          td.text-center WS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Algorithmen für verteilte Systeme
-          td.text-center WS
-          td.text-center 2
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Grundlagen Betriebssysteme
-          td.text-center WS
-          td.text-center 2
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Grundlagen Compilersysteme
-          td.text-center SS
-          td.text-center 3
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Nichtprozedurale Programmierung
-          td.text-center SS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Computational Geometry (Algorithmische Geometrie)
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Nicht-Standard Datenbank Systeme
-          td.text-center SS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Introduction to Concurrency Theory and Practice
-          td.text-center SS
-          td.text-center 5
-          td &nbsp;
-    .row
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+          tbody
+            tr
+              td: strong MMT-Bachelor
+              td: strong INF: Einführung Simulation
+              td.text-center SS
+              td.text-center 4
+            tr
+              td
+              td: strong INF: Tuning von Datenbanksystemen
+              td.text-center WS
+              td.text-center 4
+            tr
+              td
+              td: strong INF: Algorithmen für verteilte Systeme
+              td.text-center WS
+              td.text-center 2
+            tr
+              td
+              td: strong INF: Grundlagen Betriebssysteme
+              td.text-center WS
+              td.text-center 2
+            tr
+              td
+              td: strong INF: Grundlagen Compilersysteme
+              td.text-center SS
+              td.text-center 3
+            tr
+              td
+              td: strong INF: Nichtprozedurale Programmierung
+              td.text-center SS
+              td.text-center 4
+            tr
+              td
+              td: strong INF: Computational Geometry (Algorithmische Geometrie)
+              td.text-center WS
+              td.text-center 5
+            tr
+              td
+              td: strong INF: Nicht-Standard Datenbank Systeme
+              td.text-center SS
+              td.text-center 5
+            tr
+              td
+              td: strong INF: Introduction to Concurrency Theory and Practice
+              td.text-center SS
+              td.text-center 5
+    .row.study.hide#ma-computerwissenschaften
       .col-lg-8.col-lg-offset-2.text-center
-        h4.section-subheading.text-muted Angebot für Student*innen des Studiengangs Informatik-Master
+        h4.section-subheading.text-muted Angebot für Master Student*innen der Universität Salzburg
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong Informatik-Master
-          td: strong ITS: Software Notationen
-          td.text-center WS
-          td.text-center 2
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Spezielle Software Technologien
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: E-Health und Telemedizin
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Energieinformatik Grundlagen
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Software Architekturen
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Netz Zuverlässigkeit und Virtualisierung
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Protokolle der Energieinformatik
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Adaptive Softwaresysteme
-          td.text-center WS
-          td.text-center 6
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Big Data Engineering
-          td.text-center WS
-          td.text-center 3
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: ERP Systeme
-          td.text-center WS
-          td.text-center 3
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: Roboterkinematik
-          td.text-center WS
-          td.text-center 6
-          td &nbsp;
-        tr
-          td
-          td: strong ITS: alle LVA des AISE / AISP Masterstudiums
-          td.text-center &nbsp;
-          td.text-center &nbsp;
-          td &nbsp;
-        tr
-          td(colspan=5) &nbsp;
-        tr
-          td
-          td: strong MMT: Data Analysis
-          td.text-center WS
-          td.text-center 2,5
-          td.text-muted Grundlagen Diskrete Mathematik und Programmierung         
-        tr
-          td
-          td: strong MMT: Algorithmik
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Datenstrukturen & Algorithmen
-        tr
-          td
-          td: strong MMT: Intelligent Systems 1
-          td.text-center SS
-          td.text-center 2,5
-          td.text-muted Einführung Statistik
-        tr
-          td
-          td: strong MMT: Intelligent Systems 2
-          td.text-center WS
-          td.text-center 2,5
-          td.text-muted Intelligent Systems 1
-        tr
-          td
-          td: strong MMT: Game Design & Playable Media
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong MMT: Game Artificial Intelligence
-          td.text-center WS
-          td.text-center 5
-          td.text-muted Programmierung, State Machines, Design Patterns
-        tr
-          td
-          td: strong MMT: Visual Analytics
-          td.text-center WS
-          td.text-center 5
-          td.text-muted Grundlagen Computergrafik, Grundlagen Statistik
-        tr
-          td
-          td: strong MMT: Scalable Web Architectures
-          td.text-center SS
-          td.text-center 5
-          td.text-muted Kenntnisse im Bereich Server-seitige Programmierung(z.B. PHP, Ruby on Rails)
-    .row
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+              th.col-xs-2 Voraussetzungen
+          tbody
+            tr
+              td: strong Informatik-Master
+              td: strong ITS: Software Notationen
+              td.text-center WS
+              td.text-center 2
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Spezielle Software Technologien
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: E-Health und Telemedizin
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Energieinformatik Grundlagen
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Software Architekturen
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Netz Zuverlässigkeit und Virtualisierung
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Protokolle der Energieinformatik
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Adaptive Softwaresysteme
+              td.text-center WS
+              td.text-center 6
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Big Data Engineering
+              td.text-center WS
+              td.text-center 3
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: ERP Systeme
+              td.text-center WS
+              td.text-center 3
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: Roboterkinematik
+              td.text-center WS
+              td.text-center 6
+              td &nbsp;
+            tr
+              td
+              td: strong ITS: alle LVA des AISE / AISP Masterstudiums
+              td.text-center &nbsp;
+              td.text-center &nbsp;
+              td &nbsp;
+            tr
+              td(colspan=5) &nbsp;
+            tr
+              td
+              td: strong MMT: Data Analysis
+              td.text-center WS
+              td.text-center 2,5
+              td.text-muted Grundlagen Diskrete Mathematik und Programmierung
+            tr
+              td
+              td: strong MMT: Algorithmik
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Datenstrukturen & Algorithmen
+            tr
+              td
+              td: strong MMT: Intelligent Systems 1
+              td.text-center SS
+              td.text-center 2,5
+              td.text-muted Einführung Statistik
+            tr
+              td
+              td: strong MMT: Intelligent Systems 2
+              td.text-center WS
+              td.text-center 2,5
+              td.text-muted Intelligent Systems 1
+            tr
+              td
+              td: strong MMT: Game Design & Playable Media
+              td.text-center WS
+              td.text-center 5
+              td &nbsp;
+            tr
+              td
+              td: strong MMT: Game Artificial Intelligence
+              td.text-center WS
+              td.text-center 5
+              td.text-muted Programmierung, State Machines, Design Patterns
+            tr
+              td
+              td: strong MMT: Visual Analytics
+              td.text-center WS
+              td.text-center 5
+              td.text-muted Grundlagen Computergrafik, Grundlagen Statistik
+            tr
+              td
+              td: strong MMT: Scalable Web Architectures
+              td.text-center SS
+              td.text-center 5
+              td.text-muted Kenntnisse im Bereich Server-seitige Programmierung(z.B. PHP, Ruby on Rails)
+    .row.study.hide#ma-its
       .col-lg-8.col-lg-offset-2.text-center
         h4.section-subheading.text-muted Angebot für Student*innen des Studiengangs ITS-Master
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong ITS-Master
-          td: strong INF: Machine Learning
-          td.text-center SS
-          td.text-center 2,5 (VO) bzw. 5 (+PS)
-          td.text-muted statt WF im 3. Sem
-        tr
-          td
-          td: strong INF: Einführung in Bioinformatik, Computational Biology
-          td.text-center WS
-          td.text-center 1,5 (VO) + 1,5 (VO)
-          td.text-muted statt WF im 3.Sem
-        tr
-          td
-          td: strong INF: Computational Geometry (Algorithmische Geometrie
-          td.text-center SS
-          td.text-center 2,5 (VO) bzw. 5 (+PS)
-          td.text-muted statt WF im 3. Sem
-        tr
-          td
-          td: strong INF: Nicht-Standard Datenbank Systeme
-          td.text-center SS
-          td.text-center 5
-          td.text-muted statt WF (ITS 3. Sem)
-        tr
-          td
-          td: strong INF: Ähnlichkeitssuche in großen Datenbanken
-          td.text-center 
-          td.text-center 5
-          td.text-muted statt WF (ITS 3. Sem)
-        tr
-          td
-          td: strong INF: Computer Aided Verification
-          td.text-center 
-          td.text-center 5
-          td.text-muted statt WF (ITS 3. Sem)
-    .row
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+              th.col-xs-2 Anrechnung für
+          tbody
+            tr
+              td: strong ITS-Master
+              td: strong INF: Machine Learning
+              td.text-center SS
+              td.text-center 2,5 (VO) bzw. 5 (+PS)
+              td.text-muted statt WF im 3. Sem
+            tr
+              td
+              td: strong INF: Einführung in Bioinformatik, Computational Biology
+              td.text-center WS
+              td.text-center 1,5 (VO) + 1,5 (VO)
+              td.text-muted statt WF im 3.Sem
+            tr
+              td
+              td: strong INF: Computational Geometry (Algorithmische Geometrie
+              td.text-center SS
+              td.text-center 2,5 (VO) bzw. 5 (+PS)
+              td.text-muted statt WF im 3. Sem
+            tr
+              td
+              td: strong INF: Nicht-Standard Datenbank Systeme
+              td.text-center SS
+              td.text-center 5
+              td.text-muted statt WF (ITS 3. Sem)
+            tr
+              td
+              td: strong INF: Ähnlichkeitssuche in großen Datenbanken
+              td.text-center 
+              td.text-center 5
+              td.text-muted statt WF (ITS 3. Sem)
+            tr
+              td
+              td: strong INF: Computer Aided Verification
+              td.text-center 
+              td.text-center 5
+              td.text-muted statt WF (ITS 3. Sem)
+    .row.study.hide#ma-mmt
       .col-lg-8.col-lg-offset-2.text-center
         h4.section-subheading.text-muted Angebot für Student*innen des Studiengangs MMT-Master
         br
-    table.table.table-hover.table-responsive
-      thead
-        tr
-          th.col-xs-2 Studium
-          th.col-xs-5 Angebotene LVA
-          th.col-xs-1.text-center WS/SS
-          th.col-xs-1.text-center ECTS
-          th.col-xs-3 Anmerkungen
-      tbody
-        tr
-          td: strong MMT-Master
-          td: strong INF: Nichtprozedurale Programmierung
-          td.text-center SS
-          td.text-center 4
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Computational Geometry (Algorithmische Geometrie)
-          td.text-center WS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Nicht-Standard Datenbank Systeme
-          td.text-center SS
-          td.text-center 5
-          td &nbsp;
-        tr
-          td
-          td: strong INF: Introduction to Concurrency Theory and Practice
-          td.text-center SS
-          td.text-center 5
-          td &nbsp;
+      .col-sm-12
+        table.table.table-hover.table-responsive
+          thead
+            tr
+              th.col-xs-2 Studium
+              th.col-xs-4 Angebotene LVA
+              th.col-xs-1.text-center WS/SS
+              th.col-xs-1.text-center ECTS
+          tbody
+            tr
+              td: strong MMT-Master
+              td: strong INF: Nichtprozedurale Programmierung
+              td.text-center SS
+              td.text-center 4
+            tr
+              td
+              td: strong INF: Computational Geometry (Algorithmische Geometrie)
+              td.text-center WS
+              td.text-center 5
+            tr
+              td
+              td: strong INF: Nicht-Standard Datenbank Systeme
+              td.text-center SS
+              td.text-center 5
+            tr
+              td
+              td: strong INF: Introduction to Concurrency Theory and Practice
+              td.text-center SS
+              td.text-center 5
