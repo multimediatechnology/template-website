@@ -5,7 +5,7 @@ der Universität besuchen und bekommst dafür die vollen ECTS Credits
 gutgeschreiben. Damit erhältst du die Freiheit, dein Studium individuell auf
 deine Wünsche und Bedürfnisse anpassen zu können.
 
-Um diesen Angebot nutzen zu können, ist für FH-Student\*innen einen
+Um dieses Angebot nutzen zu können, ist für FH-Student\*innen die
 Immatrikulation/Inskription an der Universität Salzburg notwendig. Details zum
 Ablauf und den jeweiligen Fristen findest Du [hier](https://www.uni-salzburg.at/index.php?id=200591)
 und [hier](http://informatik.uni-salzburg.at/erstsemestrige/).
