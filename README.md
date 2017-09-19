@@ -1,4 +1,4 @@
-# Template for MMT websites
+# Template for MultiMediaTechnology websites
 
 > A versatile template w/ a basic asset pool for MMT websites.
 
