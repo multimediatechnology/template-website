@@ -1,0 +1,12 @@
+#legalModal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+  .modal-dialog
+    .close-modal(data-dismiss='modal')
+      .lr
+        .rl
+    .modal-content
+      .modal-body
+        h2 Impressum
+        include:markdown-it legal.md
+        button.btn.btn-primary(type='button', data-dismiss='modal')
+          i.fa.fa-times
+          | &nbsp; Modal schließen

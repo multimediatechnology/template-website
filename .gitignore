@@ -7,13 +7,6 @@
 # node
 node_modules/
 
-# bower
-bower_components/
 
 # build
 dist/
-.tmp/
-
-# docs
-docs/
-

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+webpack --progress \
+        --config webpack.prod.js
