@@ -14,7 +14,7 @@ module.exports = {
     new ExtractTextPlugin('style.css'),
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, './node_modules/font-awesome/fonts/*'),
+        from: path.resolve(__dirname, 'node_modules/font-awesome/fonts/*'),
         flatten: true,
         to: 'fonts/'
       }
